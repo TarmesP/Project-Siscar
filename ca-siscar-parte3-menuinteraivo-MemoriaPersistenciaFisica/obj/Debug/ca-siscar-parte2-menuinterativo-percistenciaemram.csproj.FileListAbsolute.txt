@@ -1,7 +1,0 @@
-E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte2-menuinterativo-percistenciaemram\bin\Debug\ca-siscar-parte1-menuinterativo.exe.config
-E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte2-menuinterativo-percistenciaemram\bin\Debug\ca-siscar-parte1-menuinterativo.exe
-E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte2-menuinterativo-percistenciaemram\bin\Debug\ca-siscar-parte1-menuinterativo.pdb
-E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte2-menuinterativo-percistenciaemram\obj\Debug\ca-siscar-parte2-menuinterativo-percistenciaemram.csproj.AssemblyReference.cache
-E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte2-menuinterativo-percistenciaemram\obj\Debug\ca-siscar-parte2-menuinterativo-percistenciaemram.csproj.CoreCompileInputs.cache
-E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte2-menuinterativo-percistenciaemram\obj\Debug\ca-siscar-parte1-menuinterativo.exe
-E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte2-menuinterativo-percistenciaemram\obj\Debug\ca-siscar-parte1-menuinterativo.pdb
