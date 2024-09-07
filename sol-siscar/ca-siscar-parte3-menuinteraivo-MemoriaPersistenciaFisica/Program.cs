@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +10,8 @@ namespace ca_siscar_parte1_menuinterativo
 {
     internal class Program
     {
+
+        // -------------------------------------------------------------------------
         
         static void SalvarMarcasEmCsv(List<MARCAS> banco, string caminho) 
         {
@@ -30,10 +34,9 @@ namespace ca_siscar_parte1_menuinterativo
             }
         }
         
-        
         static List<MARCAS> CarregarMarcasDoCsv(string caminho)
         {
-            var MARCAS = new List<MARCAS>();
+            var MARCA = new List<MARCAS>();
 
             try
             {
@@ -50,7 +53,7 @@ namespace ca_siscar_parte1_menuinterativo
                                 int codigo = int.Parse(partes[0]);
                                 string nome = partes[1];
                                 string observacoes = partes[2];
-                                MARCAS.Add(new MARCAS
+                                MARCA.Add(new MARCAS
                                 {
                                     codigo = codigo,
                                     nome = nome,
@@ -65,9 +68,138 @@ namespace ca_siscar_parte1_menuinterativo
             {
                 Console.WriteLine("Ocorreu um erro: " + ex.Message);                throw;
             }
-            return MARCAS;
+            return MARCA;
         }
-        
+
+        // -------------------------------------------------------------------------
+
+        static void SalvarModelosEmCsv(List<MODELOS> banco, string caminho)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(caminho))
+                {
+                    writer.WriteLine("codigo,nome,observacoes");
+
+                    foreach (var item in banco)
+                    {
+                        writer.WriteLine(
+                            $"{item.modid},{item.modnome},{item.modobservacoes}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+            }
+        }
+
+        static List<MODELOS> CarregarModelosDoCsv(string caminho)
+        {
+            var modelos = new List<MODELOS>();
+
+            try
+            {
+                if (File.Exists(caminho))
+                {
+                    using (StreamReader reader = new StreamReader(caminho))
+                    {
+                        string linha = reader.ReadLine();
+                        while ((linha = reader.ReadLine()) != null)
+                        {
+                            var partes = linha.Split(',');
+                            if (partes.Length == 3)
+                            {
+                                int codigo = int.Parse(partes[0]);
+                                string nome = partes[1];
+                                string observacoes = partes[2];
+                                modelos.Add(new MODELOS
+                                {
+                                    modid = codigo,
+                                    modnome = nome,
+                                    modobservacoes = observacoes
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+                throw;
+            }
+            return modelos;
+        }
+
+        // -------------------------------------------------------------------------
+
+        static void SalvarVeiculosEmCsv(List<VEICULOS> banco, string caminho)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(caminho))
+                {
+                    writer.WriteLine("codigo,nome,anoFabricacao,anoModelo,observacoes");
+
+                    foreach (var item in banco)
+                    {
+                        writer.WriteLine(
+                            $"{item.veiid},{item.veinome},{item.veianofabricacao},{item.veianomodelo},{item.veiobservacoes}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+            }
+        }
+
+        static List<VEICULOS> CarregarVeiculosDoCsv(string caminho)
+        {
+            var veiculos = new List<VEICULOS>();
+
+            try
+            {
+                if (File.Exists(caminho))
+                {
+                    using (StreamReader reader = new StreamReader(caminho))
+                    {
+                        string linha = reader.ReadLine();
+                        while ((linha = reader.ReadLine()) != null)
+                        {
+                            var partes = linha.Split(',');
+                            if (partes.Length == 5)
+                            {
+                                int codigo = int.Parse(partes[0]);
+                                string nome = partes[1];
+                                int anoFabricacao = int.Parse(partes[2]);
+                                int anoModelo = int.Parse(partes[3]);
+                                string observacoes = partes[4];
+                                veiculos.Add(new VEICULOS
+                                {
+                                    veiid = codigo,
+                                    veinome = nome,
+                                    veianofabricacao = anoFabricacao,
+                                    veianomodelo = anoModelo,
+                                    veiobservacoes = observacoes
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+                throw;
+            }
+            return veiculos;
+        }
+
+        // -------------------------------------------------------------------------
+
+
         static void Main(string[] args)
         {
             int opc = 0;
@@ -83,7 +215,9 @@ namespace ca_siscar_parte1_menuinterativo
             List<VEICULOS> bancoVeiculos = new List<VEICULOS>();
             VEICULOS veiculos;
             
-            bancoMarcas = CarregarMarcasDoCsv("MARCAS.csv");
+            bancoMarcas = CarregarMarcasDoCsv("MARCA.csv");
+            bancoModelos = CarregarModelosDoCsv("MODELOS.csv");
+            bancoVeiculos = CarregarVeiculosDoCsv("VEICULOS.csv");
 
             while (opc != 9)
             {
@@ -144,7 +278,7 @@ namespace ca_siscar_parte1_menuinterativo
                                         Console.Write("Informe o novo Nome: ");
                                         item1.nome = Console.ReadLine();
 
-                                        Console.WriteLine("Informe as novas Observacoes: ");
+                                        Console.Write("Informe as novas Observacoes: ");
                                         item1.observacoes = Console.ReadLine();
 
                                         break;
@@ -190,10 +324,11 @@ namespace ca_siscar_parte1_menuinterativo
                             case 14:
                                 foreach (var valor in bancoMarcas)
                                 {
-                                    Console.Write("Codigo: " + valor.codigo);
-                                    Console.Write("Nome: " + valor.nome);
-                                    Console.Write("Observacoes: " + valor.observacoes);
                                     Console.WriteLine("------------------------------");
+                                    Console.WriteLine("Codigo: " + valor.codigo);
+                                    Console.WriteLine("Nome: " + valor.nome);
+                                    Console.WriteLine("Observacoes: " + valor.observacoes);
+                                    
                                 }
                                 break;
                         }
@@ -306,6 +441,7 @@ namespace ca_siscar_parte1_menuinterativo
                             case 24:
                                 foreach (var valor in bancoVeiculos)
                                 {
+                                    Console.WriteLine("------------------------------");
                                     Console.WriteLine("Codigo: " + valor.veiid);
                                     Console.WriteLine("Nome: " + valor.veinome);
                                     Console.WriteLine("Ano Fabricacao: " + valor.veianofabricacao);
@@ -407,6 +543,7 @@ namespace ca_siscar_parte1_menuinterativo
                             case 34:
                                 foreach (var modelo in bancoModelos)
                                 {
+                                    Console.WriteLine("------------------------------");
                                     Console.WriteLine("Codigo: " + modelo.modid);
                                     Console.WriteLine("Nome: " + modelo.modnome);
                                     Console.WriteLine("Observacoes: " + modelo.modobservacoes);
@@ -417,33 +554,12 @@ namespace ca_siscar_parte1_menuinterativo
                 }
             }
             
-            SalvarMarcasEmCsv(bancoMarcas, "MARCAS.csv");
-            
+            SalvarMarcasEmCsv(bancoMarcas, "MARCA.csv");
+            SalvarModelosEmCsv(bancoModelos, "MODELOS.csv");
+            SalvarVeiculosEmCsv(bancoVeiculos, "VEICULOS.csv");
+
         }
         
     }
 
-    public class VEICULOS
-    {
-        public int veiid;
-        public string veinome;
-        public int veianofabricacao;
-        public int veianomodelo;
-        public string veiobservacoes;
-    }
-
-    public class MODELOS
-    {
-        public int modid;
-        public string modnome;
-        public string modobservacoes;
-    }
-
-    public class MARCAS
-    {
-        public int codigo;
-        public string nome;
-        public string observacoes;
-        
-    }
 }
