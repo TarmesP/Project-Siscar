@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{98B11E8D-C9E9-4D61-8ACA-0B76FA0D1FF7}</ProjectGuid>
+    <ProjectGuid>{BE772D65-CEA4-4920-A821-6678BBE97B91}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ca_siscar_parte1_menuinterativo</RootNamespace>
     <AssemblyName>ca-siscar-parte1-menuinterativo</AssemblyName>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
