@@ -1,0 +1,7 @@
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte3-menuinteraivo-MemoriaPersistenciaFisica\obj\Debug\ca-siscar-parte3-menuinteraivo-MemoriaPersistenciaFisica.csproj.AssemblyReference.cache
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte3-menuinteraivo-MemoriaPersistenciaFisica\obj\Debug\ca-siscar-parte3-menuinteraivo-MemoriaPersistenciaFisica.csproj.CoreCompileInputs.cache
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte3-menuinteraivo-MemoriaPersistenciaFisica\obj\Debug\ca-siscar-parte1-menuinterativo.exe
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte3-menuinteraivo-MemoriaPersistenciaFisica\obj\Debug\ca-siscar-parte1-menuinterativo.pdb
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte3-menuinteraivo-MemoriaPersistenciaFisica\bin\Debug\ca-siscar-parte1-menuinterativo.exe.config
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte3-menuinteraivo-MemoriaPersistenciaFisica\bin\Debug\ca-siscar-parte1-menuinterativo.exe
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\ca-siscar-parte3-menuinteraivo-MemoriaPersistenciaFisica\bin\Debug\ca-siscar-parte1-menuinterativo.pdb

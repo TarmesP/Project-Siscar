@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 using System.Configuration;
 
-
 namespace ca_siscar_parte1_menuinterativo
 {
     internal class Program
@@ -217,10 +216,15 @@ namespace ca_siscar_parte1_menuinterativo
 
             List<VEICULOS> bancoVeiculos = new List<VEICULOS>();
             VEICULOS veiculos;
-            
-            bancoMarcas = CarregarMarcasDoCsv("MARCA.csv");
-            bancoModelos = CarregarModelosDoCsv("MODELOS.csv");
-            bancoVeiculos = CarregarVeiculosDoCsv("VEICULOS.csv");
+
+            string caminhoBanco = ConfigurationManager.AppSettings["caminhoBanco"];
+            string nomeBancosMarcas = ConfigurationManager.AppSettings["nomeBancosMarcas"];
+            string nomeBancosModelos = ConfigurationManager.AppSettings["nomeBancosModelos"];
+            string nomeBancosVeiculos = ConfigurationManager.AppSettings["nomeBancosVeiculos"];
+
+            bancoMarcas = CarregarMarcasDoCsv(caminhoBanco + nomeBancosMarcas);
+            bancoModelos = CarregarModelosDoCsv(caminhoBanco + nomeBancosModelos);
+            bancoVeiculos = CarregarVeiculosDoCsv(caminhoBanco + nomeBancosVeiculos);
 
             while (opc != 9)
             {
@@ -557,12 +561,16 @@ namespace ca_siscar_parte1_menuinterativo
                 }
             }
             
-            SalvarMarcasEmCsv(bancoMarcas, "MARCA.csv");
-            SalvarModelosEmCsv(bancoModelos, "MODELOS.csv");
-            SalvarVeiculosEmCsv(bancoVeiculos, "VEICULOS.csv");
+            SalvarMarcasEmCsv(bancoMarcas, caminhoBanco + nomeBancosMarcas);
+            SalvarModelosEmCsv(bancoModelos, caminhoBanco + nomeBancosModelos);
+            SalvarVeiculosEmCsv(bancoVeiculos, caminhoBanco + nomeBancosVeiculos);
+
+            // criar pasta temp C:
+
+            // colocar Salvar*EmCsv em cada subMenu/aplic
 
         }
-        
+
     }
 
 }
