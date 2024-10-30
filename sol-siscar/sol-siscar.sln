@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ca-siscar-parte3-menuintera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ca-siscar-parte4-menuinteraivo-Servidor", "ca-siscar-parte4-menuinteraivo-MemoriaClienteServidor\ca-siscar-parte4-menuinteraivo-Servidor.csproj", "{BE772D65-CEA4-4920-A821-6678BBE97B91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ca-siscar-parte5-menuinteraivo-MemoriaPOO", "ca-siscar-parte5-menuinteraivo-MemoriaPOO\ca-siscar-parte5-menuinteraivo-MemoriaPOO.csproj", "{9F8CAD97-2B39-4634-A5DD-672439F90558}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BE772D65-CEA4-4920-A821-6678BBE97B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE772D65-CEA4-4920-A821-6678BBE97B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE772D65-CEA4-4920-A821-6678BBE97B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8CAD97-2B39-4634-A5DD-672439F90558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8CAD97-2B39-4634-A5DD-672439F90558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8CAD97-2B39-4634-A5DD-672439F90558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8CAD97-2B39-4634-A5DD-672439F90558}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

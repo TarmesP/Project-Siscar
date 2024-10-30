@@ -14,8 +14,8 @@ namespace ca_siscar_parte1_menuinterativo
     {
 
         // -------------------------------------------------------------------------
-        
-        static void SalvarMarcasEmCsv(List<MARCAS> banco, string caminho) 
+
+        static void SalvarMarcasEmCsv(List<MARCAS> banco, string caminho)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace ca_siscar_parte1_menuinterativo
                 Console.WriteLine("Ocorreu um erro: " + ex.Message);
             }
         }
-        
+
         static List<MARCAS> CarregarMarcasDoCsv(string caminho)
         {
             var MARCA = new List<MARCAS>();
@@ -68,7 +68,7 @@ namespace ca_siscar_parte1_menuinterativo
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Ocorreu um erro: " + ex.Message);                throw;
+                Console.WriteLine("Ocorreu um erro: " + ex.Message); throw;
             }
             return MARCA;
         }
@@ -335,7 +335,7 @@ namespace ca_siscar_parte1_menuinterativo
                                     Console.WriteLine("Codigo: " + valor.codigo);
                                     Console.WriteLine("Nome: " + valor.nome);
                                     Console.WriteLine("Observacoes: " + valor.observacoes);
-                                    
+
                                 }
                                 break;
                         }
@@ -560,7 +560,7 @@ namespace ca_siscar_parte1_menuinterativo
                     }
                 }
             }
-            
+
             SalvarMarcasEmCsv(bancoMarcas, caminhoBanco + nomeBancosMarcas);
             SalvarModelosEmCsv(bancoModelos, caminhoBanco + nomeBancosModelos);
             SalvarVeiculosEmCsv(bancoVeiculos, caminhoBanco + nomeBancosVeiculos);
