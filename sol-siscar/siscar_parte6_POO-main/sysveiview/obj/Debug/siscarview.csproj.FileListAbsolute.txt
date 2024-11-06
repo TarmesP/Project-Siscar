@@ -1,0 +1,2 @@
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\sysveiview\obj\Debug\siscarview.csproj.AssemblyReference.cache
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\sysveiview\obj\Debug\siscarview.csproj.CoreCompileInputs.cache

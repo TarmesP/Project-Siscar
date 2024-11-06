@@ -1,0 +1,4 @@
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\ca-siscar-parte5-menuinteraivo-MemoriaPOO\obj\Debug\siscar.csproj.AssemblyReference.cache
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\ca-siscar-parte5-menuinteraivo-MemoriaPOO\obj\Debug\siscar.csproj.CoreCompileInputs.cache
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\ca-siscar-parte5-menuinteraivo-MemoriaPOO\obj\Debug\ca-siscar-parte1-menuinterativo.exe
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\ca-siscar-parte5-menuinteraivo-MemoriaPOO\obj\Debug\ca-siscar-parte1-menuinterativo.pdb
