@@ -1,0 +1,6 @@
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\siscarmodel\bin\Debug\siscarmodel.dll
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\siscarmodel\bin\Debug\siscarmodel.pdb
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\siscarmodel\obj\Debug\siscarmodel.csproj.AssemblyReference.cache
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\siscarmodel\obj\Debug\siscarmodel.csproj.CoreCompileInputs.cache
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\siscarmodel\obj\Debug\siscarmodel.dll
+E:\! ANCHIETA\ARQUITETURA DE SOFTWARE\Projetos\AS\sol-siscar\siscar_parte6_POO-main\siscarmodel\obj\Debug\siscarmodel.pdb
