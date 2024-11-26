@@ -371,7 +371,7 @@ namespace siscarview
                     case 32:
                         Console.Write("Excluir por Codigo: ");
                         int codigoExcluir = int.Parse(Console.ReadLine());
-                        Veiculos.excluir(codigoExcluir);
+                        Modelos.excluir(codigoExcluir);
 
                         break;
 
